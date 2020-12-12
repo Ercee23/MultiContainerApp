@@ -16,3 +16,15 @@ after_success:
   - docker push ercee23/multi-nginx
   - docker push ercee23/multi-server
   - docker push ercee23/multi-worker
+deploy:
+  provider: elasticbeanstalk
+  region: us-east-2
+  app: multi-docker
+  env: MultiDocker-env
+  bucket_name: elasticbeanstalk-us-east-2-1549263650614
+  bucket_path: docker-multi
+  on: 
+    branch: main
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: $AWS_SECRET_KEY
