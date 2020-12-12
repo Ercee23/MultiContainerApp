@@ -16,4 +16,3 @@ after_success:
   - docker push ercee23/multi-nginx
   - docker push ercee23/multi-server
   - docker push ercee23/multi-worker
-deploy:
