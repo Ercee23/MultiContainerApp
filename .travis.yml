@@ -21,7 +21,7 @@ deploy:
   region: us-east-2
   app: multi-docker
   env: MultiDocker-env
-  bucket_name: elasticbeanstalk-us-east-2-1549263650614
+  bucket_name: elasticbeanstalk-us-east-2-154926365061
   bucket_path: docker-multi
   on: 
     branch: main
